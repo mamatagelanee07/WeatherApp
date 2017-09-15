@@ -3,6 +3,7 @@ package com.andigeeky.weatherapp.app;
 import android.app.Application;
 import android.util.Log;
 
+import com.andigeeky.weatherapp.BuildConfig;
 import com.andigeeky.weatherapp.service.WeatherService;
 import com.andigeeky.weatherapp.service.pojo.CurrentWeather;
 import com.andigeeky.weatherapp.service.pojo.Weather;
@@ -25,7 +26,7 @@ public class WeatherApp extends Application {
         super.onCreate();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.openweathermap.org/")
+                .baseUrl(BuildConfig.SERVER_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
