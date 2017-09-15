@@ -6,7 +6,6 @@ import android.util.Log;
 import com.andigeeky.weatherapp.BuildConfig;
 import com.andigeeky.weatherapp.service.WeatherService;
 import com.andigeeky.weatherapp.service.pojo.CurrentWeather;
-import com.andigeeky.weatherapp.service.pojo.Weather;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -14,10 +13,6 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-
-/**
- * Created by e066733 on 15/09/17.
- */
 
 public class WeatherApp extends Application {
 
