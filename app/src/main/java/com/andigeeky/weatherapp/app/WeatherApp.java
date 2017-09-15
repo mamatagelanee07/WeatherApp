@@ -14,6 +14,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+
 /**
  * Created by e066733 on 15/09/17.
  */
@@ -21,6 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class WeatherApp extends Application {
 
     public static final String TAG = WeatherApp.class.getSimpleName();
+
     @Override
     public void onCreate() {
         super.onCreate();
